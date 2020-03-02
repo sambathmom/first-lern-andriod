@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:tint="@color/white"
+        android:src="@drawable/ic_email_black_24dp"
+        android:layout_width="400dp"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/raduis_laoyout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/iv_email"
+                android:src="@drawable/ic_email_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_toRightOf="@+id/iv_email"
+                android:id="@+id/et_email"
+                android:hint="Enter Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/iv_password"
+                android:src="@drawable/ic_vpn_key_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_toRightOf="@+id/iv_password"
+                android:id="@+id/et_password"
+                android:hint="Enter Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_margin="10dp"
+        android:background="@color/loginBtn"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_login_as_member"
+        android:layout_margin="10dp"
+        android:background="@color/loginAsMember"
+        android:text="Login As Member"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
