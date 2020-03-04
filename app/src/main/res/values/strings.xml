@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MonaApp</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC7kT_AekO_yXU_BvnJLb7qWHOn3C_JVxQ</string>
 </resources>
+
