@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
+
 public class NavigationDrawerActivity extends AppCompatActivity {
 
     private DrawerLayout dl;
@@ -20,10 +21,10 @@ public class NavigationDrawerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_navigation_drawer);
 
         dl = (DrawerLayout)findViewById(R.id.activity_navigation_drawer);
-        t = new ActionBarDrawerToggle(this, dl,R.string.open, R.string.close);
+        t = new ActionBarDrawerToggle(this, dl, R.string.open, R.string.close);
 
         dl.addDrawerListener(t);
         t.syncState();
