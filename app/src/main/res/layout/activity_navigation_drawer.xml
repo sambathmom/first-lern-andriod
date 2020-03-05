@@ -34,7 +34,4 @@
         android:id="@+id/nv">
 
     </com.google.android.material.navigation.NavigationView>
-
-
-
 </androidx.drawerlayout.widget.DrawerLayout>
