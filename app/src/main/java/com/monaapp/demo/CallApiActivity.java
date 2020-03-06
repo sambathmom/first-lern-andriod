@@ -3,6 +3,7 @@ package com.monaapp.demo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.monaapp.demo.api.ApiService;
@@ -36,11 +37,12 @@ public class CallApiActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<JSONObject> call, Response<JSONObject> response) {
                     String body = response.body().toString();
+                    Log.d("TAG", "onResponse: "+body);
                 }
 
                 @Override
                 public void onFailure(Call<JSONObject> call, Throwable t) {
-
+                    Log.d("TAG", "onFailure: ");
                 }
             });
         } catch (JSONException e) {
