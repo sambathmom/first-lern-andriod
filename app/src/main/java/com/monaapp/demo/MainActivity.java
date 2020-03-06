@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private Button btnLogin;
     private Button btnClose;
     private Button btnDrawer;
+    private Button btnCallApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnClose = (Button) findViewById(R.id.btn_close);
         btnDrawer = (Button) findViewById(R.id.btn_drawer);
+        btnDrawer = (Button) findViewById(R.id.btn_api);
 
         btnLogin.setOnClickListener(this);
         btnClose.setOnClickListener(this);
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 Intent navigationDrawer = new Intent(MainActivity.this, NavigationDrawerActivity.class);
                 MainActivity.this.startActivity(navigationDrawer);
                 break;
+            case R.id.btn_api :
+                Intent callApi = new Intent(MainActivity.this, CallApiActivity.class);
+                MainActivity.this.startActivity(callApi);
             default:
                 break;
         }

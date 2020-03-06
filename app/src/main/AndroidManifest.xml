@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigationDrawerActivity"></activity>
+        <activity android:name=".CallApiActivity"></activity>
+        <activity android:name=".NavigationDrawerActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
